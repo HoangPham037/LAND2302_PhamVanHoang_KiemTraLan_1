@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:background="#1976D2"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:id="@+id/tvTitleSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_below="@+id/tvTitleSong"
+            android:textColor="@color/white"
+            android:id="@+id/tvNameSing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@+id/tvNameSing"
+            android:textColor="@color/white"
+            android:id="@+id/tvAlbumTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPause"
+            android:src="@drawable/baseline_pause_circle_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgStart"
+            android:src="@drawable/baseline_play_circle_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
